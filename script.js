@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
 
 // 打字机效果
 const typingText = document.querySelector('.typing-text');
-const roles = ['AI探索者', '摸鱼学研究员', '翘课学实践者', '南大本科生'];
+const roles = ['AI大模型使用者', '摸鱼学研究员', '翘课学实践者', '南大摸鱼本科生'];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
