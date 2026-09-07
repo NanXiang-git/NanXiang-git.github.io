@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>张逸泽 - 个人主页</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="张逸泽，南京大学智能科学与技术本科生。研究兴趣、学术阅读、教育经历与联系方式。">
 </head>
 
 <body>
+<a class="skip-link" href="#about">跳转到正文</a>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">张逸泽</a>
-            <ul class="nav-menu">
+            <a href="#home" class="nav-logo">Yize Zhang <span>/ 张逸泽</span></a>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">首页</a></li>
                 <li><a href="#about" class="nav-link">关于我</a></li>
                 <li><a href="#research" class="nav-link">研究兴趣</a></li>
@@ -21,53 +22,37 @@
                 <li><a href="#academic" class="nav-link">学术阅读</a></li>
                 <li><a href="#contact" class="nav-link">联系我</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="展开导航菜单" aria-expanded="false" aria-controls="nav-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>你好，我是 <span class="highlight">张逸泽</span></h1>
-                <p class="typing-text">我是一名</p>
-                <p class="hero-description">南京大学智能科学与技术学院 · 大二本科生</p>
-                <div class="hero-buttons">
-                    <a href="#research" class="btn btn-primary">研究兴趣</a>
-                    <a href="#contact" class="btn btn-secondary">联系我</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-image">
-                    <img src="个人生活照.jpg" alt="张逸泽">
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
+    <div class="page-layout" id="home">
+      <aside class="profile">
+        <a href="个人生活照.jpg"><img class="portrait" src="个人生活照.jpg" alt="张逸泽的生活照" width="190" height="190"></a>
+        <div class="profile-text"><h1>Yize Zhang <span>张逸泽</span></h1>
+        <p>南京大学<br>智能科学与技术学院<br><span class="muted">2024 级本科生</span></p>
+        <p class="directions">大语言模型应用 · 多模态评测<br>AI 辅助学习与创作</p>
+        <div class="profile-links"><a href="mailto:241870184@smail.nju.edu.cn">✉ Email</a><a href="#contact">↗ QQ</a></div>
+        <p class="profile-note">认真探索 AI，也认真研究摸鱼。</p></div>
+      </aside>
+      <main>
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">关于我</h2>
+            <h2 class="section-title">关于我<span class="english">About Me</span></h2>
             <div class="about-content">
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img src="个人生活照2.jpg" alt="张逸泽">
-                    </div>
-                </div>
+                
                 <div class="about-text">
-                    <p>我是张逸泽，目前就读于<strong>南京大学智能科学与技术学院</strong>，是一名大二本科生。</p>
+                    <p>我是张逸泽，目前就读于<strong>南京大学智能科学与技术学院</strong>，是 2024 级本科生。</p>
                     <p>我的学术兴趣聚焦于人工智能与摸鱼翘课方法论的前沿领域，同时保持对新兴研究方向的好奇心。</p>
 
                     <h3><i class="fas fa-graduation-cap"></i> 教育背景</h3>
                     <ul class="education-list">
                         <li>
-                            <strong>南京大学</strong> - 智能科学与技术 · 学士学位
+                            <strong>南京大学</strong> - 智能科学与技术 · 本科在读
                             <span>2024 - 2028</span>
                         </li>
                         <li>
@@ -86,10 +71,10 @@
 
     <section id="research" class="skills">
         <div class="container">
-            <h2 class="section-title">研究兴趣与探索方向</h2>
+            <h2 class="section-title">研究兴趣与探索方向<span class="english">Research Interests</span></h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">
+                    <div class="skill-icon" aria-hidden="true">
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>大模型使用</h3>
@@ -101,7 +86,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
+                    <div class="skill-icon" aria-hidden="true">
                         <i class="fas fa-chart-bar"></i>
                     </div>
                     <h3>大模型评测</h3>
@@ -113,7 +98,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
+                    <div class="skill-icon" aria-hidden="true">
                         <i class="fas fa-fish"></i>
                     </div>
                     <h3>摸鱼学</h3>
@@ -125,7 +110,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
+                    <div class="skill-icon" aria-hidden="true">
                         <i class="fas fa-bed"></i>
                     </div>
                     <h3>翘课学</h3>
@@ -142,7 +127,7 @@
 
     <section id="news" class="news-section">
         <div class="container">
-            <h2 class="section-title"><span class="title-emoji">🎉</span> 最新动态</h2>
+            <h2 class="section-title"><span class="title-emoji">🎉</span> 最新动态<span class="english">News</span></h2>
             <div class="news-grid">
                 <div class="news-card">
                     <p class="news-date">2025年12月</p>
@@ -160,7 +145,7 @@
 
     <section id="academic" class="about">
         <div class="container">
-            <h2 class="section-title">学术服务与阅读</h2>
+            <h2 class="section-title">学术服务与阅读<span class="english">Academic Reading</span></h2>
             <div class="about-content">
                 <div class="about-text" style="flex: 1;">
                     <h3><i class="fas fa-book-open"></i> 期刊会议</h3>
@@ -179,18 +164,14 @@
                         <li><i class="fas fa-bookmark"></i> 《五年高考三年模拟》</li>
                     </ul>
                 </div>
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img src="个人生活照3.jpg" alt="张逸泽">
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">联系我</h2>
+            <h2 class="section-title">联系我<span class="english">Contact</span></h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>期待与您交流</h3>
@@ -200,7 +181,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>电子邮件</strong>
-                                <span>241870184@smail.nju.edu.cn</span>
+                                <a href="mailto:241870184@smail.nju.edu.cn">241870184@smail.nju.edu.cn</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -235,21 +216,23 @@
         </div>
     </section>
 
+    <section id="gallery"><div class="container"><h2 class="section-title">生活片段<span class="english">Gallery</span></h2><div class="gallery"><a href="个人生活照2.jpg"><img src="个人生活照2.jpg" alt="张逸泽的生活照片，点击查看原图" loading="lazy"></a><a href="个人生活照3.jpg"><img src="个人生活照3.jpg" alt="张逸泽的生活照片，点击查看原图" loading="lazy"></a></div></div></section>
     <footer class="footer">
         <div class="container" style="text-align: center;">
-            <p>&copy; 2024 张逸泽 - 南京大学. All Rights Reserved.</p>
+            <p>页面更新于 2026 年 9 月 <span>© 2026 张逸泽</span></p>
             <p>使用 <i class="fas fa-heart" style="color: #e74c3c;"></i> 和 <i class="fas fa-fish"
                     style="color: #3498db;"></i> 制作</p>
 
             <div id="debug-globe-box"
-                style="margin: 30px auto; width: 300px; min-height: 250px; border: 1px dashed #666;">
-                <p style="font-size: 12px; color: #888;">地球加载中 (如长时间空白请检查广告拦截)...</p>
+                class="visitor-globe">
+                
                 <script type="text/javascript" id="mmvst_globe"
                     src="https://mapmyvisitors.com/globe.js?d=FgZ8WZjt2LDzi2qj8KBzxzfx0jWkjtUJjKMrKaktgk"></script>
             </div>
         </div>
     </footer>
 
+    </main></div>
     <script src="script.js"></script>
 </body>
 
