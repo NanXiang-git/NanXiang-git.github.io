@@ -17,5 +17,5 @@ function updateNavigation() {
   scheduled = false;
 }
 window.addEventListener('scroll', () => { if(!scheduled) { scheduled = true; requestAnimationFrame(updateNavigation); } }, {passive:true});
-window.addEventListener('resize', () => { if(window.innerWidth > 760) closeMenu(); updateNavigation(); });
+window.addEventListener('resize', () => { if(window.innerWidth > 900) closeMenu(); updateNavigation(); });
 updateNavigation();
