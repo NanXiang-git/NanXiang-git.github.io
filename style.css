@@ -37,3 +37,5 @@
  .education-list li{grid-template-columns:minmax(0,1fr);gap:2px}.news-card{grid-template-columns:minmax(0,1fr);gap:4px;padding:12px 0 18px}.news-date,.news-card h3,.news-desc{grid-column:1;grid-row:auto}
  .contact-card{border-top:1px solid var(--line);padding-top:18px}.gallery img{height:170px}.section-title{font-size:21px}.contact-items .contact-item>div{grid-template-columns:60px minmax(0,1fr)}
 }
+
+.paper-row.paper-row-text{grid-template-columns:minmax(0,1fr)}
